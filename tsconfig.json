@@ -20,23 +20,3 @@
     "emitDeclarationOnly": true,
   }
 }
-
-
-// {
-//   "compilerOptions": {
-//     "rootDir": "src",
-//     "target": "es5",
-//     "esModuleInterop": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "strict": true,
-//     "skipLibCheck": true,
-//     "jsx": "react",
-//     "module": "ESNext",
-//     "declaration": true,
-//     "declarationDir": "dist/esm/types",
-//     "sourceMap": true,
-//     "outDir": "dist/esm",
-//     "moduleResolution": "node",
-//     "allowSyntheticDefaultImports": true
-//   }
-// }

@@ -14,16 +14,19 @@ A simple and reusable React component library with support for Storybook.
 
 To set up the project, clone the repository and install the dependencies:
 
+## Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/my-super-cool-component-library.git
-
+```
 # Navigate into the project directory
+```bash
 cd my-super-cool-component-library
+```
 
 # Install dependencies
+```bash
 npm install
-
+```
 ## Running the Project
 
 To build and run the project locally, follow these steps:
@@ -32,21 +35,17 @@ To build and run the project locally, follow these steps:
 
 ```bash
 npm run rollup
+```
 
-### Run tests (optional)
+### Publish the component library:
 
 ```bash
+npm publish
+```
+### Run tests (optional)
+```bash
 npm run test
-
-### Start Storybook
-npm run storybook
-
-### Start Storybook
-npm run storybook
-
-### Build Storybook for production
-npm run build-storybook
-
+```
 
 ## Storybook
 
@@ -56,7 +55,12 @@ Storybook provides a sandbox to develop and showcase your components.
 
 ```bash
 npm run storybook
+```
 
+### Build Storybook for production
+```bash
+npm run build-storybook
+```
 
 ## Scripts
 
