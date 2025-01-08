@@ -2,3 +2,4 @@
 .codegpt
 dist
 node_modules
+*storybook.log
