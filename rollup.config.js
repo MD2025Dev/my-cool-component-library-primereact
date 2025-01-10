@@ -12,6 +12,8 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const packageJson = require("./package.json");
 
+import strip from 'rollup-plugin-strip';
+
 export default [
   {
     input: "src/index.ts",
@@ -47,7 +49,12 @@ export default [
     // input: "dist/esm/types/index.d.ts",
     input: "dist/esm/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
-    plugins: [dts()],
+    plugins: [
+      dts(),
+      strip({
+        directives: ['use client'], // ลบ directive 'use client'
+      })
+    ],
 
     // NEW
     external: [/\.css$/],
