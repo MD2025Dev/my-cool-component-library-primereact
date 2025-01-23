@@ -1,0 +1,17 @@
+.p-float-label:has(input:focus) label, .p-float-label:has(input.p-filled) label, .p-float-label:has(input:-webkit-autofill) label, .p-float-label:has(textarea:focus) label, .p-float-label:has(textarea.p-filled) label, .p-float-label:has(.p-inputwrapper-focus) label, .p-float-label:has(.p-inputwrapper-filled) label {
+    left: 0;
+    font-size: 12px;
+}
+.custom-input {
+    padding: 5px;
+}
+
+*{
+    font-size: 14px;
+}
+button,
+input {
+    height: 2rem;
+    font-size: 14px;
+    line-height: 8px;
+}

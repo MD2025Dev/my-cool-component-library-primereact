@@ -4,7 +4,7 @@ import ButtonPrime, { ButtonProps } from './ButtonPrime';
 
 // ข้อมูลเกี่ยวกับ Story
 export default {
-  title: 'Components/ButtonPrime',
+  title: 'My Custom Components/CustomButtonPrime',
   component: ButtonPrime,
   argTypes: {
     label: { control: 'text', description: 'Label of the button' },
@@ -19,15 +19,20 @@ const Template: StoryFn<ButtonProps> = (args) => <ButtonPrime {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   label: 'Click Me',
+  isRound: false,
 };
 
-export const WithCustomLabel = Template.bind({});
-WithCustomLabel.args = {
-  label: 'Custom Label',
+export const WithCustomLabelAndIcon = Template.bind({});
+WithCustomLabelAndIcon.args = {
+  label: 'New',
+  size: "small",
+  icon: "pi pi-plus",
 };
 
 export const ClickableButton = Template.bind({});
 ClickableButton.args = {
   label: 'Click Me!',
   onClick: () => alert('Button clicked!'),
+  severity: 'success',
+  size: "small"
 };
